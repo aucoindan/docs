@@ -46,8 +46,24 @@ The next feature you will be adding to your React app is authentication. The Amp
 In the following procedure, you’ll add authentication to your React app using Amazon Cognito and support for username/password logins.
 
 **To add authentication to your React app**
+1. Run the following command to add amplify to your react project, answering the prompted questions as indicated.
 
-1. From your projects directory, run the following command, and answer the prompted questions as indicated.
+```bash
+amplify init
+
+? Enter a name for the project amazonlocation
+? Enter a name for the environment dev
+? Choose your default editor: None
+? Choose the type of app that you're building javascript
+Please tell us about your project
+? What javascript framework are you using react
+? Source Directory Path:  src
+? Distribution Directory Path: build
+? Build Command:  npm run-script build
+? Start Command: npm run-script start
+Using default provider  awscloudformation
+```
+2. From your projects directory, run the following command, and answer the prompted questions as indicated.
 
 ```bash
 amplify add auth
@@ -57,7 +73,7 @@ amplify add auth
 ? Do you want to configure advanced settings?  No, I am done.
 ```
 
-2. Deploy the service by running the `amplify push` command.
+3. Deploy the service by running the `amplify push` command.
 
 ## Connecting your React app to the Amazon Location Service
 
